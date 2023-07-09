@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 75%;
+            border: 1px solid grey;
+            margin: 50px auto;
+            display: grid;
+            gap: 10px;
+            background-color: gray;
+            color: white;
+            grid-template-columns: repeat(3,1fr) 150px;
+            grid-template-rows: 60px 100px 200px 60px;
+        }
+        .div1{background-color: #ff4757;
+        grid-column: 1/-1;
+        }
+
+    .div2{background-color: #2ed567;}
+    .div3{background-color: rgb(203, 55, 28);}
+    .div4{background-color: purple;}
+    .div5{background-color: crimson;
+    grid-column: 4/5;
+    grid-row: 2/4;
+    }
+    .div6{background-color:#2f3542;
+    grid-column: 1/4;
+    }
+    .div7{background-color: #ffa502;
+    
+    grid-column: 1/5;}
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="div1">header</div>
+        <div class="div2">box1</div>
+        <div class="div3">box2</div>
+        <div class="div4">box3</div>
+        <div class="div5">sidebar</div>
+        <div class="div6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nisi quis quo. Autem sint vero placeat ullam ipsam perspiciatis accusamus quas, alias nihil facere nobis ipsa blanditiis consequuntur sit animi?</div>
+        <div class="div7">footer</div>
+
+    </main>
+</body>
+</html>

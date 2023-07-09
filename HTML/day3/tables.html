@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <p><h1>Tables in HTML</h1></p>
+        <table style="text-align: center;">
+            <tr style="background-color: bisque;">
+                <th>TIME/DAY</th>
+                <th>9.30 TO 10.30</th>
+                <th>10.30 TO 11.30</th>
+                <th>11.30 TO 12.30</th>
+            </tr>
+
+            <tr>
+                <td><b>Monday</b></td>
+                <td>AA</td>
+                <td>BB</td>
+                <td rowspan="2">DD</td>
+            </tr>
+
+            
+            <tr>
+                <td><b>Tuesday</b></td>
+                <td>CC</td>
+                <td rowspan="2">AA</td>
+                <!-- <td>DD</td> -->
+            </tr>
+
+            
+            <tr>
+                <td><b>Wednesday</b></td>
+                <td>BB</td>
+                <!-- <td>AA</td> -->
+                <td>CC</td>
+            </tr>
+
+            
+            <tr>
+                <td><b>Thursday</b></td>
+                <td>DD</td>
+                <td>CC</td>
+                <td rowspan="2">AA</td>
+            </tr>
+
+            <tr>
+                <td><b>Friday</b></td>
+                <td>CC</td>
+                <td>DD</td>
+                <!-- <td>AA</td> -->
+            </tr>
+
+            
+            <tr>
+                <td><b>Saturday</b></td>
+                <td colspan="3">Project</td>
+                <!-- <td>Project</td>
+                <td>Project</td> -->
+            </tr>
+
+            <caption><b> Time Table for Daily Online Lecture</b></caption>
+
+            <colgroup>
+                <col span="1" style="background-color: bisque;">
+                <col span="3" style="background-color: rgb(231, 200, 224);">
+            </colgroup>
+
+            
+        </table>
+
+        <style>
+            table,td,th {
+                border: 2px solid rgb(90, 164, 188);
+                border-collapse: collapse;
+
+            }
+            </style>
+        <br>
+        <table style="text-align: center;">
+            <tr style="background-color: bisque;">
+                <th style="width: 100px; " >SUBJECT</th>
+                <th style="width: 285px;">FACULTY</th>
+            </tr>
+
+            <tr>
+                <td>AA</td>
+                <td>Jay Tank</td>
+            </tr>
+
+            <tr>
+                <td>BB</td>
+                <td>Akshay Agrawal</td>
+            </tr>
+
+            <tr>
+                <td>CC</td>
+                <td>Abhay Saxena</td>
+            </tr>
+
+            <tr>
+                <td>DD</td>
+                <td>Darshan Rathod</td>
+            </tr>
+
+            <tr>
+                <td>Project</td>
+                <td>-</td>
+            </tr>
+
+            <colgroup>
+                <col span="2" style="background-color: rgb(231, 200, 224);">
+            </colgroup>        
+        </table>
+    </body>
+</html>

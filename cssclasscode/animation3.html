@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 100px;
+            background-color: brown;
+            border-radius: 10px;position: absolute;
+            left: 0;right: 0;
+            margin: auto;
+            animation-name: demo;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            text-align: center;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes demo{
+            from{
+                background-color: tomato;
+                width: 300px;
+                top: 10px;
+            }
+            to{
+                background-color: #33475b;
+                width: 50px;
+                top: 800px;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Fynd</div>
+</body>
+</html>

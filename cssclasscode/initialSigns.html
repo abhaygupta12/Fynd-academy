@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* div p{
+            background-color: coral;
+        } */
+
+
+        /* .container p{
+            background-color: coral;
+        } */
+
+        /* descendant selector */
+        /* div.container p{
+            background-color: coral;
+        } */
+
+        /* child selector > sign  means direct child */
+
+        /* div.container > p{
+            background-color: burlywood;
+        } */
+        /* p.container > div{
+            background-color: burlywood;
+        } */
+        /* adjacent/direct sibling sign */
+        /* div + p{
+            background-color: burlywood;
+        } */
+
+
+          /* div.container ~ p{
+            background-color: burlywood;
+        } */
+        div ~ p{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator signs in CSS</h1>
+    <div class="container">
+        <p>First</p>
+        <div><p>Child</p></div>
+        <p>Second</p>
+        <h4>heading</h4>
+        <p>second data</p>
+        <div>this is div</div>
+        <p>Third</p>
+    </div>
+    <p>outside</p>
+    <!-- <p class="container">
+        <div>First</div>
+        <p><div>Child</div></p>
+        <div>Second</div>
+        <div>Third</div>
+    </p> -->
+    <section class="container">
+        <p>jsgdhjsd</p>
+        <p>ashdvhsgdv</p>
+    </section>
+    <p>hello</p>
+</body>
+</html>

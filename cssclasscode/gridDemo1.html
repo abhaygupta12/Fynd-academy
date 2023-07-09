@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            /* background-color: blue; */
+            gap: 5px;
+            font-size: 800;
+            font-size: 22px;
+            /* align-content: center; */
+            text-align: center;
+            text-transform: uppercase;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'sidebar main main main'
+            'sidebar content1 content2 content3'
+            'footer footer footer footer'
+            ;
+        }
+        nav{
+            background-color: #a7ffeb;
+            grid-area: nav;
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+        main{
+            background-color: #84ffff;
+            grid-area: main;
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+        #sidebar{
+            background-color: #18ffff;
+            grid-area: sidebar;
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+        #content1{
+            background-color: #6fffd2;
+            grid-area: content1;
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+        #content2{
+            background-color: #64ffda;
+            grid-area: content2;
+            border-radius: 5px;
+            padding-top: 5px;
+        }#content3{
+            background-color: #73ffba;
+            grid-area: content3;
+        }
+        footer{
+            background-color: #1de9b6;
+            grid-area: footer;
+            border-radius: 5px;
+            padding-top: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Navbar</nav>
+        <main>Main</main>
+        <div id="sidebar">Sidebar</div>
+        <div id="content1">Content1</div>
+        <div id="content2">Content2</div>
+        <div id="content3">Content3</div>
+        <footer>Footer</footer>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+         /* .main{
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: brown;
+        } */
+        p{
+           
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: demo;
+            animation-duration: 4s;
+            animation-delay: -2s;
+        }
+
+        @keyframes demo{
+            /* from{background-color: blue;}
+            to{background-color: red;} */
+            0%{background-color: blue;margin-left: 0;margin-top: 0;}
+            25%{background-color: red;margin-left: 200px;margin-top: 0;}
+            50%{background-color: yellowgreen;margin-left: 200px;margin-top: 200px;}
+            75%{background-color: pink;margin-left: 0;margin-top: 200px;}
+            100%{background-color: cyan;margin-left: 0;margin-right: 0;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation in css</h1>
+    <div class="main">
+        <p></p>
+
+    </div>
+</body>
+</html>
